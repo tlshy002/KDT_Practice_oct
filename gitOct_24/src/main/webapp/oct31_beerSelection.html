@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>맥주 추천 ver1.0</title>
+</head>
+<body>
+	<h2>맥주 추천 사이트에 오신 것을 환영합니다.</h2>
+	<p>원하는 색을 선택하고, 버튼을 누르면 추천된 맥주이름을 확인할 수 있습니다.</p>
+	<form action="BeerServlet.do">
+	원하는 색 선택: 
+	<select name="color">
+		<option value="red">빨간색</option>
+		<option value="yellow">황색</option>
+		<option value="blue">파란색</option>
+		<option value="black">흑색</option>
+		<option value="etc">상관없음</option>
+	</select><br/>
+	<input type="submit" value="선택 완료">
+	
+	</form>
+</body>
+</html>

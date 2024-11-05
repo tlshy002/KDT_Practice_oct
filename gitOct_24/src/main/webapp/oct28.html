@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>테이블 작성</h1>
+<h2>1. 기본적인 테이블의 구조</h2>
+<table>
+	<tr>
+		<td>15</td><td>15</td><td>30</td>
+	</tr>
+	<tr>
+		<td>45</td><td>60</td><td>45</td>
+	</tr>
+	<tr>
+		<td>60</td><td>90</td><td>90</td>
+	</tr>
+</table>
+<h2>2. 테이블 행이나 열의 제목 넣기</h2>
+<table>
+	<tr>
+		<th></th><th>토요일</th><th>일요일</th>
+	</tr>
+	<tr>
+		<th>판매된 티켓</th><td>120</td><td>135</td>
+	</tr>
+	<tr>
+		<th>총 판매액</th><td>600,000</td><td>675,000</td>
+	</tr>
+</table>
+<h2>3. 테이블의 열 확장하기</h2>
+<table>
+	<tr>
+		<th></th><th>오전9시</th><th>오전10시</th><th>오전11시</th>
+		<th>오전12시</th>
+	</tr>
+	<tr>
+		<th>월요일</th><td colspan="2">내셔널 지오그래피</td>
+		<td>아침 뉴스</td><td>오늘의 요리</td>
+	</tr>
+	<tr>
+		<th>화요일</th><td colspan="3">스 포 츠</td><td>생방송</td>
+	</tr>
+</table>
+<h2>4. 테이블의 행 확장하기</h2>
+<table>
+	<tr>
+		<th></th><th>SBS</th><th>KBS</th><th>MBC</th>
+	</tr>
+	<tr>
+		<th>오후6시 ~ 오후7시</th><td rowspan="2">영 화</td>
+		<td>코메디</td><td>오늘의 뉴스</td>
+	</tr>
+	<tr>
+		<th>오후7시 ~ 오후8시</th><td>스포츠</td><td>드라마</td>
+	</tr>
+</table>
+<h2>5. 테이블의 경계선과 배경색</h2>
+<table border="2" bgcolor="Lime">
+	<tr>
+		<th width="150"></th><th>인출액</th><th>예금액</th>
+		<th width="150" bgcolor="#FFE4E1">잔 액</th>
+	</tr>
+	<tr>
+		<th>1 월</th><td>250,000</td><td>660,000</td>
+		<td bgcolor="#FF4500">410,000</td>
+	</tr>
+	<tr>
+		<th>2 월</th><td>135,000</td><td>895,000</td>
+		<td bgcolor="#EE82EE">1,1170,000</td>
+	</tr>
+</table>
+
+<h2>도전과제 테이블</h2>
+<table>
+	<tr><th></th><th>Home starter hosting</th><th>Premium business hosting</th> </tr>
+	<tr> <th>Disk space</th> <td>250mb</td><td>1gb</td> </tr>
+	<tr> <th>Bandwidth</th> <td>5gb per month</td><td>50gb per month</td> </tr>
+	<tr> <th>Email accounts</th> <td>3</td><td>10</td> </tr>
+	<tr> <th>Server</th> <td>Shared</td><td>VPS</td> </tr>
+	<tr> <th>Support</th> <td>Email</td><td>Telephone and email</td> </tr>
+	<tr> <th>Setup</th> <td>Free</td><td>Free</td> </tr>
+	<tr> <th>FTP accounts</th> <td>1</td><td>5</td> </tr>
+	<tr> <td colspan="3" align="center">Sign up now and save 10%</td> </tr>
+</table>
+
+<h1>폼 작성</h1>
+<p></p>
+<form action="Oct28Servlet"> <!-- 폼의 목적지는 서블릿임. 폼의 데이터가 서블릿으로 전송됨 -->
+<p> 이름 <input type="text" name="username" size="15" max="30"/> </p>
+<p> 암호 <input type="password" name="pwd" size="15" max="30"/> </p>
+
+<p> 이 공연에 대한 소감을 작성하세요</p>
+<textarea rows="20" cols="45" name="reviews">당신의 의견을 작성합니다.</textarea>
+
+<p> 당신이 좋아하는 장르를 선택하세요.<br/>
+	<input type="radio" name="genre1" value="rock" checked="checked"> 락
+	<input type="radio" name="genre2" value="pop"> 팝 뮤직
+	<input type="radio" name="genre3" value="Jazz"> 재즈
+</p>
+
+<p> 즐겨찾는 사이트를 선택하세요.(복수선택가능)<br/>
+	<input type="checkbox" name="site" value="never" checked="checked"> 네이버
+	<input type="checkbox" name="site" value="google"> 구글
+	<input type="checkbox" name="site" value="coopang"> 쿠팡
+	<input type="checkbox" name="site" value="youtube"> 유튜브
+</p>
+
+<p>사용하고 있는 컴퓨터의 종류를 선택하세요.</p>
+<select name="PC"> 
+	<option value="i3">i3 CPU 컴퓨터</option>
+	<option value="i5">i3 CPU 컴퓨터</option>
+	<option value="i7">i3 CPU 컴퓨터</option>
+	<option value="i9">i3 CPU 컴퓨터</option>
+	<option value="apple">애플</option>
+</select>
+
+<p>사진을 업로드 하세요</p>
+<input type="file" name="photo"><br/>
+<input type="submit" value="전송하기">
+<input type="button" value="전송하기">
+
+</form>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
